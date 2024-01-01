@@ -1,0 +1,10 @@
+#splash {
+  height: 360px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.job-title {
+  color: rgb(120,120,120);
+  
+}
