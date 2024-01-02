@@ -10,12 +10,19 @@
   </head>
 
   <body>
-    <div class="container">
-        <h1 class="text-center mt-2 mb-4">Careers</h1>
+    {% include 'navbar.html' %}
         <img src="https://careers-website.cristiancassett.repl.co/static/splash-img.jpg" class="img-fluid" id="splash">
-        <h2 class="text-center mt-2 mb-4">About our Careers</h2>
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">Careers</h1>
+        <div class="row mb-4 mt-4 align-items-center">
+          <div class="col-md-6">
         <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        <h2 class=" text-center mt-2 mb-4">Open Positions</h2>
+          </div>
+          <div class="col-6 d-none d-md-block">
+            <img src="/static/people.jpg" id="people-img">
+          </div>
+          </div>
+        <h2 class=" text-center mt-5 mb-4">Open Positions</h2>
         <div class="mt-2 mb-4">
           {% for job in jobs%}
             {% include 'job-item.html' %}
@@ -23,8 +30,11 @@
       <div class="text-center">
         <button class="btn btn-outline-warning btn-lg mb-5">Contact us</button>
       </div>
-      <p class="text-center mt-4">Copyright 2024 Cristian Cassetta</p>
+      
     </div>
+      
+        {% include 'footer.html' %}
+      
   </body>
   
 </html>

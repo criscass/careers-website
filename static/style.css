@@ -1,3 +1,7 @@
+body {
+  font-family: roboto;
+}
+
 #splash {
   height: 360px;
   width: 100%;
@@ -7,4 +11,9 @@
 .job-title {
   color: rgb(120,120,120);
   
+}
+
+#people-img {
+  height: 320px;
+  border-radius: 4px;
 }
